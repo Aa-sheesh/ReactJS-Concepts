@@ -19,3 +19,18 @@
 | Synthetic Events | Synthetic events in React are cross-browser wrappers around the browser’s original event. |
 | ContextAPI | Context API is used to pass global variables anywhere in the code. |
 | Controlled Components | React’s Controlled Components manage form data via component state, receiving values through props and updating through callbacks like onChange. |
+
+## Features of React:
+1. Component-Based Architecture.
+2. JSX (JavaScript Syntax Extension).
+3. Virtual DOM.
+4. One-way Data Binding (Top to bottom).
+5. Performance.
+6. Components.
+7. Single-Page Applications (SPAs).
+
+## ReactJS Lifecycle:
+1. Initialization.
+2. Mounting Phase.
+3. Updating Phase.
+4. Unmounting Phase.
