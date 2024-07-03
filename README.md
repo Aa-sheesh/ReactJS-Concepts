@@ -82,22 +82,54 @@ The main reason we need Babel is that it gives us the privilege to make use of t
 
 In React, everything is treated as a component be it a functional component or class component. A component can contain a state. Whenever the state of any component is changed react updates its Virtual DOM tree. Though it may sound like it is ineffective the cost is not much significant as updating the virtual DOM doesn’t take much time.
 
-React maintains two Virtual DOM at each time, one contains the updated Virtual DOM and one which is just the pre-update version of this updated Virtual DOM. Now it compares the pre-update version with the updated Virtual DOM and figures out what exactly has changed in the DOM like which components have been changed. This process of comparing the current Virtual DOM tree with the previous one is known as  `‘diffing’`. Once React finds out what exactly has changed then it updates those objects only, on real DOM.
+React maintains two Virtual DOM at each time, one contains the updated Virtual DOM and one which is just the pre-update version of this updated Virtual DOM. Now it compares the pre-update version with the updated Virtual DOM and figures out what exactly has changed in the DOM like which components have been changed. This process of comparing the current Virtual DOM tree with the previous one is known as `‘diffing’`. Once React finds out what exactly has changed then it updates those objects only, on real DOM.
 
 React uses something called batch updates to update the real DOM. It just means that the changes to the real DOM are sent in batches instead of sending any update for a single change in the state of a component.
 
 We have seen that the re-rendering of the UI is the most expensive part and React manages to do this most efficiently by ensuring that the Real DOM receives batch updates to re-render the UI. This entire process of transforming changes to the real DOM is called `Reconciliation`.
 
 This significantly improves the performance and is the main reason why React and its Virtual DOM are much loved by developers all around.
+
 ### ReactDOM
+
 #### Important functions provided by ReactDOM
-1. render(): This is one of the most important methods of ReactDOM. This function is used to render a single React Component or several Components wrapped together in a Component or a div element. 
+
+1. render(): This is one of the most important methods of ReactDOM. This function is used to render a single React Component or several Components wrapped together in a Component or a div element.
 2. findDOMNode(): This function is generally used to get the DOM node where a particular React component was rendered. This method is very less used like the following can be done by adding a ref attribute to each component itself.
 3. unmountComponentAtNode(): This function is used to unmount or remove the React Component that was rendered to a particular container.
-4. hydrate(): This method is equivalent to the render() method but is implemented while using server-side rendering. 
-5. createPortal(): It allow us to render a component into a DOM node that resides outside the current DOM hierarchy of the parent component. 
+4. hydrate(): This method is equivalent to the render() method but is implemented while using server-side rendering.
+5. createPortal(): It allow us to render a component into a DOM node that resides outside the current DOM hierarchy of the parent component.
+
 #### Key features of ReactDOM :
+
 1. ReactDOM.render() replaces the child of the given container if any. It uses a highly efficient diff algorithm and can modify any subtree of the DOM.
 2. React findDOMNode() function can only be implemented upon mounted components thus Functional components can not be used in findDOMNode() method.
 3. ReactDOM uses observables thus provides an efficient way of DOM handling.
 4. ReactDOM can be used on both the client-side and server-side.
+
+## React Lists
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+function Navmenu(props) {
+  const list = props.menuitems;
+
+  const updatedList = list.map((listItems) => {
+    return <li key={listItems.toString()}>{listItems}</li>;
+  });
+
+  return <ul>{updatedList}</ul>;
+}
+
+const menuItems = [1, 2, 3, 4, 5];
+
+ReactDOM.render(
+  <Navmenu menuitems={menuItems} />,
+  document.getElementById("root")
+);
+```
+
+## Conclusion
+
+In summary, React lists are arrays with values. To render the elements of an array we iterate over each element and create a JSX element for each item. We use keys to label list elements, and when the changes are made to the list we don’t need to re-render the entire list.
