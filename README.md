@@ -12,14 +12,7 @@
 | PropTypes                                                                    | use the propType for validating any data we are receiving from props.                                                                               |
 | States                                                                       | React JS State is a way to store and manage the information or data while creating a React Application.                                             |
 | Conditional Rendering                                                        | Rendering based on the conditions called conditional rendering in React.                                                                            |
-| React JS Lists/ React JS Keys/ React JS Refs/ React JS forms/ React JS Hooks |
-
-- React Lists are very useful when it comes to developing the UI of any website
-- React JS keys are a way of providing a unique identity to each item while creating the React JS Lists so that React can identify the element to be processed.
-- React JS Refs are used to access and modify the DOM elements in the React Application.
-- In React Forms, All the form data is stored in the React’s component state
-- Hooks are used to give functional components an access to use the states and are used to manage side-effects in React. |
-
+| React JS Lists/ React JS Keys/ React JS Refs/ React JS forms/ React JS Hooks |1. React Lists are very useful when it comes to developing the UI of any website <br/2. React JS keys are a way of providing a unique identity to each item while creating the React JS Lists so that React can identify the element to be processed.<br/>3. React JS Refs are used to access and modify the DOM elements in the React Application.<br/>4. In React Forms, All the form data is stored in the React’s component state<br/>5. Hooks are used to give functional components an access to use the states and are used to manage side-effects in React. |
 | Router | In React mostly SPA are developed so Navigation is complex. |
 | ReactDOM | React provides the developers with a package react-dom to access and modify the DOM. |
 | EventHandling | Modern webpages rely on user interactions, triggering events like clicks or keypresses. |
