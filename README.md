@@ -41,16 +41,16 @@
 
 ### What is JSX?
 
-- JSX stands for JavaScript XML. JSX is basically a syntax extension of JavaScript.
-- React JSX helps us to write HTML in JavaScript and forms the basis of React Development.
-- JSX creates an element in React that gets rendered in the UI. It is transformed into JavaScript functions by the compiler at runtime. Error handling and warnings become easier to handle when using JSX.
+1. JSX stands for JavaScript XML. JSX is basically a syntax extension of JavaScript.
+2. React JSX helps us to write HTML in JavaScript and forms the basis of React Development.
+3. JSX creates an element in React that gets rendered in the UI. It is transformed into JavaScript functions by the compiler at runtime. Error handling and warnings become easier to handle when using JSX.
 
 ### Why JSX ?
 
-- It is faster than normal JavaScript as it performs optimizations while translating to regular JavaScript.
-- It makes it easier for us to create templates.
-- Instead of separating the markup and logic in separate files, React uses components for this purpose. We will learn about components in detail in further articles.
-- As JSX is an expression, we can use it inside of if statements and for loops, assign it to variables, accept it as arguments, or return it from functions.
+1. It is faster than normal JavaScript as it performs optimizations while translating to regular JavaScript.
+2. It makes it easier for us to create templates.
+3. Instead of separating the markup and logic in separate files, React uses components for this purpose. We will learn about components in detail in further articles.
+4. As JSX is an expression, we can use it inside of if statements and for loops, assign it to variables, accept it as arguments, or return it from functions.
 
 ### How is it used?
 
@@ -59,7 +59,7 @@
 2. **Attributes in JSX**:
    _JSX allows us to use attributes with the HTML elements just like we do with normal HTML. But instead of the normal naming convention of HTML, JSX uses the camelcase convention for attributes._
    - **The change of class attribute to className**:The class in HTML becomes className in JSX. The main reason behind this is that some attribute names in HTML like ‘class‘ are reserved keywords in JavaScript. So, in order to avoid this problem, JSX uses the camel case naming convention for attributes.
-   - **Creation of custom attributes**:We can also use custom attributes in JSX. For custom attributes, the names of such attributes should be prefixed by data-\* attribute.
+   - **Creation of custom attributes**:We can also use custom attributes in JSX. For custom attributes, the names of such attributes should be prefixed by `data-\*` attribute.
 
 ## Babel:
 
@@ -73,7 +73,7 @@ We use Babel with React to transpile the JSX code into simple React functions th
 
 ### Features of Babel:
 
-- Babel-Plugins: The Plugins are configuration details for Babel to transpile the code that supports a number of plugins, which could be used individually, provided the environment is known.
-- Babel-Presets: Babel presets have a set of plugins that instruct Babel to transpile in a specific mode. provided the environment is known.
-- Babel-Polyfills: During instances when methods and objects, cannot be transpiled, We can make use of babel-polyfill to facilitate the use of features in any browser.
-- Babel-CLI: The Command-line interface of Babel has a lot of commands where the code can be easily compiled on the command line. It also has features like plugins and presets to be used along with the command making it easy to transpile the code at once.
+1. Babel-Plugins: The Plugins are configuration details for Babel to transpile the code that supports a number of plugins, which could be used individually, provided the environment is known.
+2. Babel-Presets: Babel presets have a set of plugins that instruct Babel to transpile in a specific mode. provided the environment is known.
+3. Babel-Polyfills: During instances when methods and objects, cannot be transpiled, We can make use of babel-polyfill to facilitate the use of features in any browser.
+4. Babel-CLI: The Command-line interface of Babel has a lot of commands where the code can be easily compiled on the command line. It also has features like plugins and presets to be used along with the command making it easy to transpile the code at once.
