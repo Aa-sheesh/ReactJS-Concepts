@@ -89,3 +89,15 @@ React uses something called batch updates to update the real DOM. It just means 
 We have seen that the re-rendering of the UI is the most expensive part and React manages to do this most efficiently by ensuring that the Real DOM receives batch updates to re-render the UI. This entire process of transforming changes to the real DOM is called `Reconciliation`.
 
 This significantly improves the performance and is the main reason why React and its Virtual DOM are much loved by developers all around.
+### ReactDOM
+#### Important functions provided by ReactDOM
+1. render(): This is one of the most important methods of ReactDOM. This function is used to render a single React Component or several Components wrapped together in a Component or a div element. 
+2. findDOMNode(): This function is generally used to get the DOM node where a particular React component was rendered. This method is very less used like the following can be done by adding a ref attribute to each component itself.
+3. unmountComponentAtNode(): This function is used to unmount or remove the React Component that was rendered to a particular container.
+4. hydrate(): This method is equivalent to the render() method but is implemented while using server-side rendering. 
+5. createPortal(): It allow us to render a component into a DOM node that resides outside the current DOM hierarchy of the parent component. 
+#### Key features of ReactDOM :
+1. ReactDOM.render() replaces the child of the given container if any. It uses a highly efficient diff algorithm and can modify any subtree of the DOM.
+2. React findDOMNode() function can only be implemented upon mounted components thus Functional components can not be used in findDOMNode() method.
+3. ReactDOM uses observables thus provides an efficient way of DOM handling.
+4. ReactDOM can be used on both the client-side and server-side.
