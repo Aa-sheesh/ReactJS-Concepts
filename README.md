@@ -130,6 +130,6 @@ ReactDOM.render(
 );
 ```
 
-## Conclusion
+### Conclusion
 
 In summary, React lists are arrays with values. To render the elements of an array we iterate over each element and create a JSX element for each item. We use keys to label list elements, and when the changes are made to the list we don’t need to re-render the entire list.
